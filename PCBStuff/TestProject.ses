@@ -1,0 +1,174 @@
+
+(session TestProject.ses
+  (base_design TestProject.dsn)
+  (placement
+    (resolution um 10)
+    (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+      (place J5_Button1 508000 -355600 front 90)
+    )
+    (component Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical
+      (place J4_LED1 863850 -228600 front 0)
+      (place J2_Buck1 406650 -279400 front 180)
+    )
+    (component Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical
+      (place J3_MCU_Right1 762250 -177800 front 0)
+      (place J3_MCU_Left1 609850 -177800 front 0)
+    )
+    (component "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
+      (place J1_XT60 203200 -304800 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "6.0.4-6f826c9f35~116~ubuntu20.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net Vin
+        (wire
+          (path F.Cu 2500
+            406650 -279400
+            394897 -279400
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            203200 -304800
+            369497 -304800
+            394897 -279400
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 2500
+            863850 -279400
+            852097 -279400
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            609850 -203200
+            621603 -203200
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            621603 -203200
+            686050 -267647
+            840344 -267647
+            852097 -279400
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            609850 -203200
+            598097 -203200
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            598097 -203200
+            547297 -254000
+            406650 -254000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            406650 -254000
+            394897 -254000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            203200 -232800
+            373697 -232800
+            394897 -254000
+          )
+        )
+      )
+      (net V5
+        (wire
+          (path B.Cu 2500
+            863850 -228600
+            852097 -228600
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            508000 -355600
+            519753 -355600
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            519753 -355600
+            519753 -351927
+            604980 -266700
+            813997 -266700
+            852097 -228600
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            406650 -228600
+            406650 -240353
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            406650 -240353
+            410323 -240353
+            508000 -338030
+            508000 -355600
+          )
+        )
+      )
+      (net SIG_LED
+        (wire
+          (path B.Cu 2500
+            762250 -330200
+            774003 -330200
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            774003 -330200
+            850203 -254000
+            863850 -254000
+          )
+        )
+      )
+      (net ButtonOut
+        (wire
+          (path F.Cu 2500
+            609850 -177800
+            609850 -189553
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            609850 -189553
+            606177 -189553
+            533400 -262330
+            533400 -355600
+          )
+        )
+      )
+    )
+  )
+)

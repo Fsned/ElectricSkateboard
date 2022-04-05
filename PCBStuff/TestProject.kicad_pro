@@ -366,7 +366,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "../../../Desktop/TestProject.dsn",
+      "specctra_dsn": "TestProject.dsn",
       "step": "",
       "vrml": ""
     },
@@ -412,7 +412,7 @@
   },
   "sheets": [
     [
-      "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
+      "68877d35-b796-44db-9124-b8e744e7412e",
       ""
     ]
   ],
