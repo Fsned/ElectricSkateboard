@@ -38,7 +38,7 @@
     )
     (component Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical
       (place J4_LED1 86385.000000 -22860.000000 front 0.000000 (PN Conn_01x03_Male))
-      (place J2_Buck1 40665.000000 -27940.000000 front 180.000000 (PN Conn_01x03_Female))
+      (place J2_Buck1 40665.000000 -22860.000000 front 0.000000 (PN Conn_01x03_Female))
     )
     (component Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical
       (place J3_MCU_Right1 76225.000000 -17780.000000 front 0.000000 (PN Conn_01x07_Female))
@@ -184,13 +184,13 @@
   )
   (network
     (net Vin
-      (pins J2_Buck1-1 J1_XT60-1)
+      (pins J2_Buck1-1 J1_XT60-2)
     )
     (net GND
-      (pins J4_LED1-3 J3_MCU_Left1-2 J2_Buck1-2 J1_XT60-2)
+      (pins J4_LED1-3 J3_MCU_Left1-2 J2_Buck1-2 J1_XT60-1)
     )
     (net V5
-      (pins J5_Button1-1 J4_LED1-1 J2_Buck1-3)
+      (pins J5_Button1-1 J2_Buck1-3)
     )
     (net "unconnected-(J3_MCU_Left1-Pad3)"
       (pins J3_MCU_Left1-3)
@@ -229,7 +229,7 @@
       (pins J4_LED1-2 J3_MCU_Right1-7)
     )
     (net ButtonOut
-      (pins J5_Button1-2 J3_MCU_Left1-1)
+      (pins J5_Button1-2 J4_LED1-1 J3_MCU_Left1-1)
     )
     (class kicad_default
       (circuit
