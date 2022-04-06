@@ -10,6 +10,9 @@ Stuff i make myself:
 - PCB to connect everything
 - Software to read UART and control the LED's accordingly
 
+![image](https://user-images.githubusercontent.com/26329076/161918388-682b1ca5-cf0b-4d37-be81-816321443106.png)
+
+
 ## Batterycase
 This is the case, containing the batterypack, the BMS and the battery-indicator. This should eventually have some fancy
 slide-in male connector, to latch on and connect to the motor controller.
